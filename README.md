@@ -1,6 +1,8 @@
 # SwitchBot OpenAPI CLI (Go)
 
 ## Usage
+Get SwitchBot OpenAPI Token
+https://github.com/OpenWonderLabs/SwitchBotAPI#getting-started
 ### GET devices (swtchbot device)
 ```
 $ ./swichgot list -token XXXXXXXXX -show
