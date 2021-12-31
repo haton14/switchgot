@@ -34,7 +34,7 @@ func NewClient(token string) *Swichgot {
 	return &Swichgot{token: token}
 }
 
-func (s *Swichgot) List(show bool) {
+func (s *Swichgot) List(show bool) []Device {
 	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf("%s/%s/%s", api_url, api_version, path_device), nil)
 	if err != nil {
 		log.Fatalf("Request create error. %s", err)
@@ -89,4 +89,24 @@ func (s *Swichgot) List(show bool) {
 		s += "]"
 		fmt.Println(s)
 	}
+	return list
+}
+
+func (d *Device) ID() string {
+	return d.id
+}
+
+func (d *Device) Name() string {
+	return d.name
+}
+func (d *Device) DeviceType() string {
+	return d.deviceType
+}
+
+func (d *Device) EnableCloudService() *bool {
+	return d.enableCloudService
+}
+
+func (d *Device) hHubID() string {
+	return d.hubID
 }
