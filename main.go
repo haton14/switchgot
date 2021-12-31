@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"githun.com/haton14/swichgot/request"
+	"githun.com/haton14/switchgot/request"
 )
 
 func main() {

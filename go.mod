@@ -1,3 +1,3 @@
-module githun.com/haton14/swichgot
+module githun.com/haton14/switchgot
 
 go 1.17
